@@ -2,3 +2,12 @@
 @import './styles/typography.css';
 @import './fonts/fonts.css';
 
+.hello1 {
+    font: var(--h1)
+}
+.hello2 {
+    font: var(--main-text-mobile)
+}
+.hello3 {
+    font: var(--buttons-text)
+}
