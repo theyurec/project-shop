@@ -1,14 +1,11 @@
 import './App.css'
 import './assets/styles.css'
 import React from 'react'
+import './pages/components/app/Layout/Header/index'
 
 // Роутинг компонентов
 function App() {
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  )
+  return <div></div>
 }
 
 export default App
