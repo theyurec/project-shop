@@ -1,1 +1,7 @@
 /* css переменные для цветов */
+:root {
+    --brand-white: #FFFFFF;
+    --brand-black: #161C24;
+    --bramd-blue: #4295E4;
+    --brand-gray: #454F5B;
+}

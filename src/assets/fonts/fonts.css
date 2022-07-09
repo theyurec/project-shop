@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "SFUIText";
+    src: url("SFUIText-Light.woff"),
+    url("SFUIText-Light.woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "SFUIText";
+    src: url("SFUIText-Regular.woff"),
+    url("SFUIText-Regular.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SFUIText";
+    src: url("SFUIText-Medium.woff"),
+    url("SFUIText-Medium.woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SFUIText";
+    src: url("SFUIText-Semibold.woff"),
+    url("SFUIText-Semibold.woff2");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "SFUIText";
+    src: url("SFUIText-Bold.woff"),
+    url("SFUIText-Bold.woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "SFProDisplay";
+    src: url("SFProDisplay-Regular.woff"),
+    url("SFProDisplay-Regular.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "SFProDisplay";
+    src: url("SFProDisplay-Medium.woff"),
+    url("SFProDisplay-Medium.woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "SFProDisplay";
+    src: url("SFProDisplay-Semibold.woff"),
+    url("SFProDisplay-Semibold.woff2");
+    font-weight: 600;
+}
