@@ -1,8 +1,8 @@
 import styles from './Header.module.scss'
 import React from 'react'
 
-const Index = () => {
+const Header = () => {
   return <div className={styles.green}>111</div>
 }
 
-export default Index
+export default Header
