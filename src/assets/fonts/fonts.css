@@ -1,47 +1,47 @@
 @font-face {
-    font-family: "SFUIText";
+    font-family: "SFUIText-Light";
     src: url("SFUIText-Light.woff"),
     url("SFUIText-Light.woff2");
     font-weight: 300;
 }
 @font-face {
-    font-family: "SFUIText";
+    font-family: "SFUIText-Regular";
     src: url("SFUIText-Regular.woff"),
     url("SFUIText-Regular.woff2");
     font-weight: 400;
 }
 @font-face {
-    font-family: "SFUIText";
+    font-family: "SFUIText-Medium";
     src: url("SFUIText-Medium.woff"),
     url("SFUIText-Medium.woff2");
     font-weight: 500;
 }
 @font-face {
-    font-family: "SFUIText";
+    font-family: "SFUIText-Semibold";
     src: url("SFUIText-Semibold.woff"),
     url("SFUIText-Semibold.woff2");
     font-weight: 600;
 }
 @font-face {
-    font-family: "SFUIText";
+    font-family: "SFUIText-Bold";
     src: url("SFUIText-Bold.woff"),
     url("SFUIText-Bold.woff2");
     font-weight: 700;
 }
 @font-face {
-    font-family: "SFProDisplay";
+    font-family: "SFProDisplay-Regular";
     src: url("SFProDisplay-Regular.woff"),
     url("SFProDisplay-Regular.woff2");
     font-weight: 400;
 }
 @font-face {
-    font-family: "SFProDisplay";
+    font-family: "SFProDisplay-Medium";
     src: url("SFProDisplay-Medium.woff"),
     url("SFProDisplay-Medium.woff2");
     font-weight: 500;
 }
 @font-face {
-    font-family: "SFProDisplay";
+    font-family: "SFProDisplay-Semibold";
     src: url("SFProDisplay-Semibold.woff"),
     url("SFProDisplay-Semibold.woff2");
     font-weight: 600;
