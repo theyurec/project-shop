@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Header from './Header'
 
-const Index = () => {
+const Layout = () => {
   return (
-    <div>
+    <Fragment>
       <Header />
-    </div>
+    </Fragment>
   )
 }
 
-export default Index
+export default Layout
