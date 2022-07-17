@@ -1,13 +1,13 @@
 import './App.css'
 import './assets/styles.css'
 import React from 'react'
-import Header from './components/app/Layout/Header'
+import Index from './components/app/Layout/index'
 
 // Роутинг компонентов
 function App() {
   return (
     <div>
-      <Header />
+      <Index />
     </div>
   )
 }
