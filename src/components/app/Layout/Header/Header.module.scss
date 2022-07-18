@@ -1,38 +1,62 @@
 
 .header {
-     display: flex;
+  margin: 0;
+  min-width: 1440px;
+  border-bottom: 1px solid var(--brand-gray);
+  z-index: 1;
+  background-color: var(--brand-white);
  }
+.headerWrapper {
+  width: 1236px;
+  display: flex;
+  margin: 0 104px 0 100px;
+  align-items: start;
+}
+.mainBlock {
+  display: flex;
+  justify-content: space-between;
+  width: 1084px;
+}
 .menu {
      display: flex;
+  margin: 29px 0;
+  padding: 0;
  }
-.item {
+.headerItem {
      font: var(--header-text);
-     margin: 29px 0 29px 32px;
+     margin-right: 32px;
      list-style: none;
      position: relative;
  }
+.headerItem:last-child {
+  margin: 0;
+}
+.headerItem:nth-child(2):hover {
+  cursor: pointer;
+}
 .logo {
      width: 50px;
      height: 42px;
-     margin: 20px 101px 20px 100px;
+     margin: 20px 101px 20px 0;
  }
-.submenu_list {
+.submenuList {
      font: var(--form-text);
+     background-color: var(--brand-white);
      display: none;
      position: absolute;
      width: 790px;
-     box-shadow: 0px 4px 18px -2px var(--brand-black-transparent);
+     box-shadow: 0 4px 18px -2px var(--brand-black-transparent);
      border-radius: 4px;
      padding-left: 32px;
+     z-index: 2;
  }
 .arrow {
   margin-left: 5px;
 }
 .submenu {
-   font: var(--form-text);
    margin-bottom: 16px;
  }
-.submenu_margin{
+.submenuMargin{
   height: 12px;
 }
 .submenu a {
@@ -42,25 +66,24 @@
 .submenu:first-child {
    padding-top: 32px;
  }
-.submenu_line {
-  display: none;
+.submenuLine {
   width: 256px;
   height: 1px;
+  background-color: transparent;
+}
+.submenu:hover .submenuLine {
   background-color: var(--brand-blue);
 }
-.submenu:hover .submenu_line {
-  display: block;
-}
 
-.item:hover{
-  .submenu_list{
+.headerItem:hover{
+  .submenuList{
     display: block;
   }
 }
 ul {
      list-style: none
  }
-.btn_submenu {
+.btnSubmenu {
    font: var(--buttons-text);
    width: 164px;
    height: 40px;
@@ -68,4 +91,29 @@ ul {
    color: var(--brand-white);
    border: none;
    margin: 30px 0 32px 0 ;
+  cursor: pointer;
  }
+.headerContact {
+  display: flex;
+  margin: 30px 0 31px;
+}
+.iconPhone {
+  width: 18px;
+  height: 18px;
+}
+.phone {
+  font: var(--header-contact);
+  text-decoration: none;
+  color: inherit;
+  margin-left: 8px;
+}
+.iconHeart {
+  width: 23px;
+  height: 21px;
+  margin-left: 35px;
+}
+.iconCart {
+  width: 32px;
+  height: 32px;
+  margin: -5px 0 0 34px;
+}
