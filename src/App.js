@@ -1,10 +1,15 @@
 import './App.css'
 import './assets/styles.css'
-import React from 'react'
+import React, { Fragment } from 'react'
+import MainPage from './pages/MainPage/MainPage'
 
 // Роутинг компонентов
 function App() {
-  return <div></div>
+  return (
+    <Fragment>
+      <MainPage />
+    </Fragment>
+  )
 }
 
 export default App
