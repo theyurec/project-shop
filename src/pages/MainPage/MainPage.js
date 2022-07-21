@@ -1,8 +1,8 @@
 import React from 'react'
-import Info from '../../components/index'
+import Header from '../../components/app/Layout/Header'
 
 const MainPage = () => {
-  return <Info />
+  return <Header />
 }
 
 export default MainPage

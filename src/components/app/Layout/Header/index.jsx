@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'clsx'
 import { mainMenu } from '../../../../libs/mainMenu'
 import styles from './Header.module.scss'
 import logo from '../../../../assets/images/logo.svg'
@@ -8,10 +9,11 @@ import heart from '../../../../assets/images/icon-heart.svg'
 import cart from '../../../../assets/images/icon-cart.svg'
 
 const Header = () => {
+  const wrapper = cn('wrapper', styles.headerWrapper)
   return (
     <>
       <div className={styles.header}>
-        <div className={styles.headerWrapper}>
+        <div className={wrapper}>
           <img src={logo} alt="logo" className={styles.logo} />
           <div className={styles.mainBlock}>
             <ul className={styles.menu}>

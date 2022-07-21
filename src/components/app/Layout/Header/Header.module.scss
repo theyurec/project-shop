@@ -7,9 +7,8 @@
   background-color: var(--brand-white);
  }
 .headerWrapper {
-  width: 1236px;
   display: flex;
-  margin: 0 104px 0 100px;
+  margin: 0 auto;
   align-items: start;
 }
 .mainBlock {
@@ -24,7 +23,7 @@
  }
 .headerItem {
      font: var(--header-text);
-     margin-right: 32px;
+     margin: 0 32px 0 0;
      list-style: none;
      position: relative;
  }
