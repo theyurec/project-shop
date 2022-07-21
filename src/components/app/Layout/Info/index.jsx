@@ -5,15 +5,19 @@ import styles from './Info.module.scss'
 const Info = () => {
   return (
     <>
-      <div className={styles.block_info}>
-        {blockInfo.map((item, index) => {
-          return (
-            <div key={index} className={styles.info_item}>
-              <div className={styles.info_item_numbers}>{item.numbers}</div>
-              <div className={styles.info_item_success}>{item.success}</div>
-            </div>
-          )
-        })}
+      <div className={styles.blockInfo}>
+        <div className={styles.blockInfoWrapper1}>
+          <div className={styles.blockInfoWrapper}>
+            {blockInfo.map((item, index) => {
+              return (
+                <div key={index} className={styles.infoItem}>
+                  <div className={styles.infoItemNumbers}>{item.numbers}</div>
+                  <div className={styles.infoItemSuccess}>{item.success}</div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
       </div>
     </>
   )
