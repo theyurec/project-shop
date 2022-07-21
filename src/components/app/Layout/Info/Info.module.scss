@@ -1,48 +1,54 @@
 .blockInfo {
-    min-width: 1440px;
     background-color: var(--brand-light-blue);
     display: flex;
     justify-content: center;
 }
-.blockInfoWrapper1 {
-    width: 100%;
-    min-width: 1236px;
+.blockInfoWrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-.blockInfoWrapper {
-    display: flex;
+    @media screen and (max-width: 710px) {
+        justify-content: space-around;
+    }
 }
 .infoItem {
     min-width: 109px;
-    margin: 40px 82px;
+    margin: 40px 41px;
     text-align: center;
 }
 
-.infoItemNumbers {
+.infoText {
     font: var(--main-numbers);
     margin-bottom: 16px;
 }
-.infoItemSuccess {
+.infoAbout {
     font: var(--main-numbers-text);
     color: var(--brand-gray);
 }
-@media (max-width: 376px) {
-    .blockInfoWrapper {
-
-        //padding: 30px 31px;
-    }
+@media (max-width: 385px) {
     .infoItem {
         margin: 0 10px 0 0;
     }
-    .infoItem:nth-child(3) {
-        margin-right: 68px;
-    }
-    .infoItemNumbers {
+
+    .infoText {
         font: var(--main-numbers-mobile);
     }
-    .infoItemSuccess {
+    .infoAbout {
         font: var(--main-numbers-text-mobile);
+    }
+}
+@media (max-width: 898px) {
+    .infoItem{
+        margin: 20px 20px;
+    }
+}
+@media (max-width: 507px){
+    .infoItem{
+        margin: 10px 10px;
+    }
+}
+@media (max-width: 333px){
+    .infoItem{
+        margin: 5px 5px;
     }
 }
