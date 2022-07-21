@@ -1,14 +1,14 @@
 import './App.css'
 import './assets/styles.css'
-import React from 'react'
-import Layout from './components/app/Layout/index'
+import React, { Fragment } from 'react'
+import MainPage from './pages/MainPage/MainPage'
 
 // Роутинг компонентов
 function App() {
   return (
-    <div>
-      <Layout />
-    </div>
+    <Fragment>
+      <MainPage />
+    </Fragment>
   )
 }
 
