@@ -10,10 +10,17 @@ import cart from '../../../../assets/images/icon-cart.svg'
 
 const Header = () => {
   const wrapper = cn('wrapper', styles.headerWrapper)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 745c6f7c90a313a7adbda807a04c1b4221de82e5
   return (
       <div className={styles.header}>
         <div className={wrapper}>
+<<<<<<< HEAD
+=======
+          <img src={logo} alt="logo" className={styles.logo} />
+>>>>>>> 745c6f7c90a313a7adbda807a04c1b4221de82e5
           <div className={styles.mainBlock}>
             <img src={logo} alt="logo" className={styles.logo} />
             <div className={styles.menu}>

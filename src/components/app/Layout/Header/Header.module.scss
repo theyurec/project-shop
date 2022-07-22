@@ -8,10 +8,15 @@
 
 .headerWrapper {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   margin: 29px ;
   justify-content: space-between;
 
+=======
+  margin: 0 auto;
+  align-items: start;
+>>>>>>> 745c6f7c90a313a7adbda807a04c1b4221de82e5
 }
 .mainBlock {
   display: flex;
@@ -24,11 +29,24 @@
  }
 
 .headerItem {
+<<<<<<< HEAD
   font: var(--header-text);
   margin-right: 32px;
   list-style: none;
   position: relative;
   white-space: nowrap;
+=======
+     font: var(--header-text);
+     margin: 0 32px 0 0;
+     list-style: none;
+     position: relative;
+ }
+.headerItem:last-child {
+  margin: 0;
+}
+.headerItem:nth-child(2):hover {
+  cursor: pointer;
+>>>>>>> 745c6f7c90a313a7adbda807a04c1b4221de82e5
 }
 
 .logo {
