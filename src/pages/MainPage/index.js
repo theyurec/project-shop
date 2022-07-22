@@ -1,5 +1,5 @@
 import React from 'react'
-import Info from '../../components/app/Layout/About/Info'
+import Info from '../../components/app/About/Info'
 
 const MainPage = () => {
   return (
