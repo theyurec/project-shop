@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'clsx'
-import { blockInfo } from '../../../../libs/blockInfo'
+import { blockInfo } from '../../../../../libs/blockInfo'
 import styles from './Info.module.scss'
 
 const Info = () => {
