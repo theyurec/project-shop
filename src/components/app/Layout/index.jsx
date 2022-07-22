@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react'
-import Info from './app/Layout/Info'
+import Header from './Header'
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <Fragment>
-      <Info />
+      <Header />
+      {children}
     </Fragment>
   )
 }

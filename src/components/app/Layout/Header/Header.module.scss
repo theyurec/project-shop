@@ -1,0 +1,117 @@
+
+.header {
+  margin: 0;
+  border-bottom: 1px solid var(--brand-gray);
+  z-index: 1;
+  background-color: var(--brand-white);
+ }
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  margin: 29px ;
+  justify-content: space-between;
+
+}
+.mainBlock {
+  display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+ }
+
+.headerItem {
+  font: var(--header-text);
+  margin-right: 32px;
+  list-style: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.logo {
+     width: 50px;
+     height: 42px;
+     margin-right: 17%;
+ }
+
+.submenuList {
+     font: var(--form-text);
+     background-color: var(--brand-white);
+     display: none;
+     position: absolute;
+     width: 790px;
+     box-shadow: 0 4px 18px -2px var(--brand-black-transparent);
+     border-radius: 4px;
+     padding-left: 32px;
+     z-index: 2;
+ }
+
+.arrow {
+  margin-left: 5px;
+
+}
+.submenu {
+   margin-bottom: 16px;
+ }
+
+.submenu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.submenuLine {
+  width: 256px;
+  height: 1px;
+  background-color: transparent;
+}
+.submenu:hover .submenuLine {
+  background-color: var(--brand-blue);
+}
+
+.headerItem:hover{
+  .submenuList{
+    display: block;
+  }
+}
+
+.btnSubmenu {
+   font: var(--buttons-text);
+   width: 164px;
+   height: 40px;
+   background: var(--brand-blue);
+   color: var(--brand-white);
+   border: none;
+   margin: 30px 0 32px 0 ;
+  cursor: pointer;
+ }
+
+.headerContact {
+  display: flex;
+  align-items: center;
+}
+
+.iconPhone {
+  width: 18px;
+  height: 18px;
+}
+
+.phone {
+  font: var(--header-contact);
+  text-decoration: none;
+  color: inherit;
+  margin-left: 8px;
+}
+
+.iconHeart {
+  width: 23px;
+  height: 21px;
+  margin-left: 35px;
+}
+
+.iconCart {
+  width: 32px;
+  height: 32px;
+  margin: -5px 0 0 34px;
+}
