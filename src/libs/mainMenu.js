@@ -14,6 +14,6 @@ export const mainMenu = [
       { name: 'Замки для раздевалок', link: '/catalog/8' }
     ]
   },
-  { name: 'Оптовая продажа', link: '/' },
-  { name: 'О нас', link: '/' }
+  { name: 'Оптовая продажа', link: '/sales' },
+  { name: 'О нас', link: '/about' }
 ]

@@ -1,7 +1,12 @@
 import React from 'react'
+import Info from '../../components/app/Layout/About/Info'
 
 const MainPage = () => {
-  return <div></div>
+  return (
+    <>
+      <Info />
+    </>
+  )
 }
 
 export default MainPage
