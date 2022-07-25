@@ -1,12 +1,13 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Header from './Header'
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <Fragment>
+    <Router>
       <Header />
       {children}
-    </Fragment>
+    </Router>
   )
 }
 
