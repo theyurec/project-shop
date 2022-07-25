@@ -2,16 +2,16 @@ export const mainMenu = [
   { name: 'Главная', link: '/' },
   {
     name: 'Каталог',
-    link: '/catalog',
+    link: '/categories',
     children: [
-      { name: 'Накладные электронные замки', link: '/catalog/1' },
-      { name: 'Врезные электронные замки', link: '/catalog/2' },
-      { name: 'Замки для квартиры', link: '/catalog/3' },
-      { name: 'Замки для дома', link: '/catalog/4' },
-      { name: 'Замки для отелей', link: '/catalog/5' },
-      { name: 'Замки для офиса', link: '/catalog/6' },
-      { name: 'Замки для шкафчиков', link: '/catalog/7' },
-      { name: 'Замки для раздевалок', link: '/catalog/8' }
+      { name: 'Накладные электронные замки', link: '/categories/1' },
+      { name: 'Врезные электронные замки', link: '/categories/2' },
+      { name: 'Замки для квартиры', link: '/categories/3' },
+      { name: 'Замки для дома', link: '/categories/4' },
+      { name: 'Замки для отелей', link: '/categories/5' },
+      { name: 'Замки для офиса', link: '/categories/6' },
+      { name: 'Замки для шкафчиков', link: '/categories/7' },
+      { name: 'Замки для раздевалок', link: '/categories/8' }
     ]
   },
   { name: 'Оптовая продажа', link: '/sales' },
