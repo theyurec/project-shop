@@ -1,6 +1,6 @@
 import React from 'react'
 import cn from 'clsx'
-import { mainMenu } from '../../../../libs/mainMenu'
+import { mainMenu } from '../../../../libs/configs/mainMenu'
 import styles from './Header.module.scss'
 import logo from '../../../../assets/images/logo.svg'
 import downArrow from '../../../../assets/images/down_arrow.svg'
