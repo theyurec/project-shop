@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Header from './Header'
+import Footer from './Footer'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <Fragment>
+    <Router>
       <Header />
-      {/*{children}*/}
-    </Fragment>
+      <Footer />
+    </Router>
   )
 }
 

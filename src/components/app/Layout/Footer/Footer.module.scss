@@ -1,0 +1,67 @@
+.footer {
+    background-color: var(--brand-dark-blue);
+    color: var(--brand-white);
+}
+.footerWrapper {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logoSocial {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+}
+.socialMedia {
+    margin: 0;
+}
+.iconVk {
+    margin-right: 25px;
+}
+.iconTwitter {
+    margin-right: 31px;
+}
+.logoFooter {
+    width: 105px;
+    height: 88px;
+}
+.footerInformation {
+    display: flex;
+}
+.linkFooter {
+    text-decoration: none;
+    color: var(--brand-white);
+}
+.footerInformationItem {
+    margin-right: 97px;
+}
+.footerInformationItem:last-child {
+    margin: 0;
+}
+.footerTitle {
+    font: var(--footer-title);
+}
+.footerInformation p,
+.linkFooter {
+    font: var(--footer-subtitle);
+}
+.footerPhone,
+.footerEmail {
+    color: var(--brand-light-gray2);
+    font: var(--footer-telephone);
+}
+.footerLine {
+    background-color: var(--brand-white);
+    width: 1240px;
+    height: 1px;
+    margin: auto;
+    opacity: 0.08;
+}
+.copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: var(--brand-white);
+    opacity: 0.6;
+}
