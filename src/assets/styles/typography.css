@@ -3,14 +3,14 @@
     --header-text: 300 20px/24px "SFUIText-Light", sans-serif;
     --header-contact: 400 18px/21px "SFProDisplay-Regular", sans-serif;
     --h1: 600 44px/62px "SFUIText-Sembibold", sans-serif;
-    --main-text: 400 14px/24px "SFUIText-Regular", sans-serif;
+    --main-text-info: 400 14px/24px "SFUIText-Regular", sans-serif;
     --main-price-text: 400 12px/22px "SFUIText-Regular", sans-serif;
     --main-price-number: 600 24px/29px "SFUIText-Sembibold", sans-serif;
     --main-price-number-strike: 300 22px/26px "SFUIText-Light", sans-serif;
     --main-price-number-mobile: 600 18px/21px "SFUIText-Sembibold", sans-serif;
     --main-price-number-strike-mobile: 300 14px/17px "SFUIText-Light", sans-serif;
     --main-numbers: 600 32px/38px "SFProDisplay-Semibold", sans-serif;
-    --main-numbers-text: 600 16px/26px "SFUIText-Sembibold", sans-serif;
+    --main-text: 600 16px/26px "SFUIText-Sembibold", sans-serif;
     --main-numbers-mobile: 600 24px/34px "SFProDisplay-Semibold", sans-serif;
     --main-numbers-text-mobile: 400 14px/24px "SFUIText-Regular", sans-serif;
     --main-icons-text: 400 20px/32px "SFUIText-Regular", sans-serif;
@@ -30,7 +30,7 @@
     --footer-subtitle-mobile: 300 14px/24px "SFUIText-Light", sans-serif;
     --footer-telephone-mobile: 300 12px/14px "SFUIText-Light", sans-serif;
     --footer-email-mobile: 300 12px/14px "SFUIText-Light", sans-serif;
-    --footer-copyright: 400 12px/14px "SFUIText-Regular", sans-serif;
+    --footer-copyright: 400 14px/17px "SFUIText-Regular", sans-serif;
     --h1-mobile: 600 22px/34px "SFUIText-Sembibold", sans-serif;
     --humburger-menu: 400 16px/26px "SFUIText-Regular", sans-serif;
     --catalog-title-mobile: 500 20px/30px "SFUIText-Medium", sans-serif;

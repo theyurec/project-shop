@@ -4,12 +4,14 @@
   border-bottom: 1px solid var(--brand-gray);
   z-index: 1;
   background-color: var(--brand-white);
+  justify-content: center;
  }
 
 .headerWrapper {
   display: flex;
   align-items: center;
-  margin: 29px ;
+  margin: 0 auto;
+  padding: 20px 0;
   justify-content: space-between;
 
 }
