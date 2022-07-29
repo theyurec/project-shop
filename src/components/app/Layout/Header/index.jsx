@@ -18,21 +18,20 @@ const Header = () => {
           <img src={logo} alt="logo" className={styles.logo} />
           <div className={styles.menu}>
             {mainMenu.map((item, index) => {
+              console.log(item)
               return (
                 <div key={index} className={styles.headerItem}>
-                  <Link path="/">{item.name}</Link>
+                  <Link to={item.link}>{item.name}</Link>
                   {!!item.children && <img className={styles.arrow} src={downArrow} alt="arrow" />}
                   {!!item.children && (
                     <>
                       <div className={styles.submenuList}>
-                        {item.children.map((item, index) => {
+                        {item.children.map((child, index) => {
                           return (
-                            <>
-                              <div className={styles.submenu} key={index}>
-                                <a href="#">{item.name}</a>
-                                <div className={styles.submenuLine}></div>
-                              </div>
-                            </>
+                            <div className={styles.submenu} key={index}>
+                              <Link to={child.link}>{child.name}</Link>
+                              <div className={styles.submenuLine} />
+                            </div>
                           )
                         })}
                         <a href="#">

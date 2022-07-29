@@ -1,7 +1,7 @@
 import React from 'react'
 
 const WholesalePage = () => {
-  return <div></div>
+  return <div>WholesalePage</div>
 }
 
 export default WholesalePage
