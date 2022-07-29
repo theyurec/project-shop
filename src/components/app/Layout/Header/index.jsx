@@ -1,13 +1,13 @@
 import React from 'react'
 import cn from 'clsx'
-import { mainMenu } from '../../../../libs/mainMenu'
+import { mainMenu } from '../../../../libs/configs/mainMenu'
 import styles from './Header.module.scss'
 import logo from '../../../../assets/images/logo.svg'
 import downArrow from '../../../../assets/images/down_arrow.svg'
 import phone from '../../../../assets/images/icon-phone.svg'
 import heart from '../../../../assets/images/icon-heart.svg'
 import cart from '../../../../assets/images/icon-cart.svg'
-import { BrowserRouter as Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const wrapper = cn('wrapper', styles.headerWrapper)

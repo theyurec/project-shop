@@ -1,7 +1,7 @@
 import React from 'react'
 import cn from 'clsx'
 import { Link } from 'react-router-dom'
-import { menuFooter } from '../../../../libs/footer'
+import { menuFooter } from '../../../../libs/configs/footer'
 import styles from './Footer.module.scss'
 import logo_footer from '../../../../assets/images/logo_footer.svg'
 import icon_vk from '../../../../assets/images/icon_social_vk.svg'
