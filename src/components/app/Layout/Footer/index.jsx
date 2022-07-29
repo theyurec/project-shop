@@ -48,7 +48,7 @@ const Footer = () => {
             <h2 className={styles.footerTitle}>Наш адрес</h2>
             <p>
               Россия,
-              <br /> Ростов-на-Дону ул. <br /> Богачева, 16
+              <br /> Ростов-на-Дону ул. <br /> Богачева, 16.
             </p>
           </div>
           <div className={styles.footerInformationItem}>
