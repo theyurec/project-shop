@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Slider from '../../components/Slider'
 
 const MainPage = () => {
-  return <div></div>
+  return (
+    <Fragment>
+      <Slider />
+    </Fragment>
+  )
 }
 
 export default MainPage
