@@ -16,9 +16,9 @@ const Footer = () => {
         <div className={styles.logoSocial}>
           <img src={logo_footer} alt="logo" className={styles.logoFooter} />
           <div className={styles.socialMedia}>
-            <img src={icon_vk} alt="logo" className={styles.iconVk} />
-            <img src={icon_twitter} alt="logo" className={styles.iconTwitter} />
-            <img src={icon_facebook} alt="logo" className={styles.iconFacebook} />
+            <img src={icon_vk} alt="vk" className={styles.iconVk} />
+            <img src={icon_twitter} alt="twitter" className={styles.iconTwitter} />
+            <img src={icon_facebook} alt="facebook" className={styles.iconFacebook} />
           </div>
         </div>
         <div className={styles.footerInformation}>
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={styles.footerLine}></div>
+      <div className={styles.footerLine} />
       <p className={styles.copyright}>© 2021 Golden Soft All rights reserved.</p>
     </div>
   )

@@ -24,11 +24,10 @@ const Slider = () => {
       <div className={wrapper}>
         {slides.map((item, index) => {
           return (
-            <>
-              {/*<div key={index} className={styles.slides}>*/}
+            <React.Fragment key={index}>
               {index === current && (
                 <div className={styles.slide}>
-                  <img src={item.image[Object.keys(item.image)[0]]} alt="slide" className={styles.slideImg} />
+                  <img src={item.image[Object.keys(item.image)[0]]} alt={item.title} className={styles.slideImg} />
                   <div className={styles.slideBlockText}>
                     <h2 className={styles.slideTitle}>
                       Golden Soft
@@ -46,8 +45,7 @@ const Slider = () => {
                   </div>
                 </div>
               )}
-              {/*</div>*/}
-            </>
+            </React.Fragment>
           )
         })}
         <div className={styles.btnSlide}>
@@ -61,7 +59,7 @@ const Slider = () => {
                   key={index}
                   onClick={() => moveCircle(index)}
                   className={`${current === index ? styles.slideCircleActive : styles.slideCircle}`}
-                ></div>
+                />
               )
             })}
           </div>
