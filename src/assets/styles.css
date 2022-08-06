@@ -6,7 +6,6 @@ body {
 	margin: 0;
 	font: var(--main-text);
 }
-
 .wrapper {
 	width: 100%;
     max-width: 1236px;

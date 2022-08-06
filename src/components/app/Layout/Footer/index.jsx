@@ -1,7 +1,8 @@
 import React from 'react'
 import cn from 'clsx'
 import { Link } from 'react-router-dom'
-import { menuFooter } from '../../../../libs/footer'
+import { menuFooterLeft } from '../../../../libs/configs/menuFooterLeft'
+import { menuFooterRight } from '../../../../libs/configs/menuFooterRight'
 import styles from './Footer.module.scss'
 import logo_footer from '../../../../assets/images/logo_footer.svg'
 import icon_vk from '../../../../assets/images/icon_social_vk.svg'
@@ -24,16 +25,14 @@ const Footer = () => {
         <div className={styles.footerInformation}>
           <div className={styles.footerInformationItem}>
             <h2 className={styles.footerTitle}>Навигация</h2>
-            {menuFooter.map((item) => {
-              return item[0].map((child, index) => {
-                return (
-                  <div key={index} className={styles.navigationItem}>
-                    <Link className={styles.linkFooter} to={child.link}>
-                      {child.name}
-                    </Link>
-                  </div>
-                )
-              })
+            {menuFooterLeft.map((item, index) => {
+              return (
+                <div key={index} className={styles.navigationItem}>
+                  <Link className={styles.linkFooter} to={item.link}>
+                    {item.name}
+                  </Link>
+                </div>
+              )
             })}
           </div>
           <div className={styles.footerInformationItem}>
@@ -49,21 +48,19 @@ const Footer = () => {
             <h2 className={styles.footerTitle}>Наш адрес</h2>
             <p>
               Россия,
-              <br /> Ростов-на-Дону ул. <br /> Богачева, 16
+              <br /> Ростов-на-Дону ул. <br /> Богачева, 16.
             </p>
           </div>
           <div className={styles.footerInformationItem}>
             <h2 className={styles.footerTitle}>Информация</h2>
-            {menuFooter.map((item) => {
-              return item[1].map((child, index) => {
-                return (
-                  <div key={index} className={styles.informationItem}>
-                    <Link className={styles.linkFooter} to={child.link}>
-                      {child.name}
-                    </Link>
-                  </div>
-                )
-              })
+            {menuFooterRight.map((item, index) => {
+              return (
+                <div key={index} className={styles.navigationItem}>
+                  <Link className={styles.linkFooter} to={item.link}>
+                    {item.name}
+                  </Link>
+                </div>
+              )
             })}
           </div>
         </div>
