@@ -15,6 +15,121 @@
   justify-content: space-between;
 
 }
+.burgerBlock {
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  display: none;
+}
+.burgerBtn {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.burgerBtnOnclick {
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  background-color: black;
+  height: 2px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.burgerBtnOnclick:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  background-color: black;
+  height: 2px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.burgerBtnOnclick:before {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 20px;
+  background-color: black;
+  height: 2px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.burgerBtnClick {
+  height: 0;
+}
+.burgerBtnClick:after {
+  top: -14px;
+  transform: rotate(45deg) translate(10px, 10px);
+}
+.burgerBtnClick:before {
+  bottom: -12px;
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.burgerMenu {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 70px;
+  left: 0;
+  background-color: var(--brand-white);
+  transform: translateX(-1000%);
+  transition: all 0.6s;
+}
+.burgerMenuActive {
+  transform: translateX(0);
+}
+.burgerMenuContent {
+  z-index: 10;
+  width: 96vw;
+  height: 90vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: all 0.6s;
+  padding: 8px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.burgerMenuItem {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--brand-gray);
+  padding: 16px 25px 16px 0;
+  border-bottom: 1px solid rgba(234, 234, 234, 1);
+}
+
+.burgerMenuArrow {
+  margin-right: 9px;
+  display: none;
+}
+.burgerMenuItem:hover .burgerMenuArrow {
+  display: block;
+}
+.burgerMenuItem:hover {
+  color: var(--brand-black);
+}
+.burgerContact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 40px 0;
+}
+.burgerContactPhone {
+  display: flex;
+  align-items: center;
+}
+.burgerPhone {
+  text-decoration: none;
+  margin-left: 8px;
+  color: var(--brand-gray);
+}
+.phoneLink {
+  color: var(--brand-blue);
+}
 .mainBlock {
   display: flex;
 }
@@ -116,4 +231,34 @@
   width: 32px;
   height: 32px;
   margin: -5px 0 0 34px;
+}
+
+
+@media screen and(max-width: 1246px) {
+  .headerWrapper {
+    padding: 20px 10px;
+  }
+}
+@media screen and(max-width: 955px) {
+  .iconPhone,
+  .phone {
+    display: none;
+  }
+}
+@media screen and(max-width: 740px) {
+  .headerWrapper {
+    padding: 20px;
+  }
+  .burgerBlock {
+    display: flex;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .mainBlock {
+    display: none;
+  }
+  .headerContact {
+    margin-right: 16px;
+  }
 }

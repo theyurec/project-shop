@@ -3,6 +3,9 @@
   display: flex;
   width: 100%;
 }
+.sliderWrapper {
+  padding-bottom: 53px;
+}
 .slide {
   display: flex;
   padding: 140px 0 53px 120px;
@@ -25,6 +28,8 @@
   flex-wrap: wrap;
 }
 .slideText {
+  font: var(--main-text-info);
+  color: var(--brand-gray);
   max-width: 287px;
   margin-bottom: 16px;
 }
