@@ -1,7 +1,7 @@
 import React from 'react'
 import { blockWhy } from '../../../libs/configs/blockWhy'
 import cn from 'clsx'
-import styles from './why.module.scss'
+import styles from './advantage.module.scss'
 
 const Why = () => {
   const wrapper = cn('wrapper', styles.wrapperWhy)

@@ -13,20 +13,26 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false)
   const wrapper = cn('wrapper', styles.headerWrapper)
+  menuActive ? (document.body.style.overflow = 'hidden') : (document.body.style.overflow = 'auto')
+  const burgerBtnClicker = cn(styles.burgerBtnOnclick, { [styles.burgerBtnClick]: menuActive })
+  const burgerMenu = cn(styles.burgerMenu, { [styles.burgerMenuActive]: menuActive })
+  const OpenBurgerMenu = () => {
+    setMenuActive(!menuActive)
+  }
   return (
     <div className={styles.header}>
       <div className={wrapper}>
         <div className={styles.burgerBlock}>
-          <div onClick={() => setMenuActive(!menuActive)} className={styles.burgerBtn}>
-            <span className={`${styles.burgerBtnOnclick} ${menuActive && styles.burgerBtnClick}`} />
+          <div onClick={OpenBurgerMenu} className={styles.burgerBtn}>
+            <span className={burgerBtnClicker} />
           </div>
         </div>
-        <div className={`${styles.burgerMenu} ${menuActive && styles.burgerMenuActive}`}>
+        <div className={burgerMenu}>
           <div className={styles.burgerMenuContent}>
             <div className={styles.burgerMenuList}>
               {mainMenu.map((item, index) => {
                 return (
-                  <Link key={index} onClick={() => setMenuActive(!menuActive)} className={styles.burgerMenuItem} to={item.link}>
+                  <Link key={index} onClick={OpenBurgerMenu} className={styles.burgerMenuItem} to={item.link}>
                     {item.name}
                     <img src={burgerArrow} alt="arrow" className={styles.burgerMenuArrow} />
                   </Link>
@@ -53,7 +59,9 @@ const Header = () => {
               console.log(item)
               return (
                 <div key={index} className={styles.headerItem}>
-                  <Link to={item.link}>{item.name}</Link>
+                  <Link className={styles.headerLink} to={item.link}>
+                    {item.name}
+                  </Link>
                   {!!item.children && <img className={styles.arrow} src={downArrow} alt="arrow" />}
                   {!!item.children && (
                     <>
