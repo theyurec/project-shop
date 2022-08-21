@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react'
-import Slider from '../../components/Slider'
+import Slider from '../../components/app/Slider'
 import Info from '../../components/app/About/Info'
+import Why from '../../components/app/Advantage'
 
 const MainPage = () => {
   return (
     <Fragment>
       <Slider />
       <Info />
+      <Why />
     </Fragment>
   )
 }

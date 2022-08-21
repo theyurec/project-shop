@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import cn from 'clsx'
 import styles from './slider.module.scss'
-import { slides } from '../../libs/configs/slides'
-import slide_left_arrow from '../../assets/images/slider_left_arrow.svg'
-import slide_right_arrow from '../../assets/images/slider_right_arrow.svg'
+import { slides } from '../../../libs/configs/slides'
+import slide_left_arrow from '../../../assets/images/slider_left_arrow.svg'
+import slide_right_arrow from '../../../assets/images/slider_right_arrow.svg'
 
 const Slider = () => {
   const wrapper = cn('wrapper', styles.sliderWrapper)
