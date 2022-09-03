@@ -3,7 +3,7 @@ import { blockWhy } from '../../../libs/configs/blockWhy'
 import cn from 'clsx'
 import styles from './advantage.module.scss'
 
-const Why = () => {
+const Advantage = () => {
   const wrapper = cn('wrapper', styles.wrapperWhy)
   return (
     <div className={styles.blockWhy}>
@@ -24,4 +24,4 @@ const Why = () => {
   )
 }
 
-export default Why
+export default Advantage

@@ -15,9 +15,11 @@
     --main-numbers-text-mobile: 400 14px/24px "SFUIText-Regular", sans-serif;
     --main-icons-text: 400 20px/32px "SFUIText-Regular", sans-serif;
     --main-icons-text-mobile: 600 16px/26px "SFUIText-Semibold", sans-serif;
-    --main-categories-title: 600 44px/62px "SFUIText-Semibold", sans-serif;
+    --main-categories-text: 500 22px/34px "SFProDisplay-Medium", sans-serif;
     --main-text-mobile: 400 14px/24px "SFUIText-Regular", sans-serif;
     --main-categories-button-text-mobile: 500 16px/19px "SFProDisplay-Medium", sans-serif;
+    --main-slider-text: 600 20px/24px "SFUIText-Semibold", sans-serif;
+    --main-slider-small-text: 300 18px/21px "SFUIText-Light", sans-serif;
     --buttons-text: 500 16px/26px "SFProDisplay-Medium", sans-serif;
     --buttons-text-mobile: 500 16px/19px "SFProDisplay-Medium", sans-serif;
     --form-text: 400 16px/26px "SFUIText-Regular", sans-serif;
