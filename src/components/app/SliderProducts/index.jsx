@@ -14,15 +14,12 @@ const SliderProducts = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset - 318
       const maxOffset = -636
-      console.log(newOffset, maxOffset)
-
       return Math.max(newOffset, maxOffset)
     })
   }
   const prevSlide = () => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset + 318
-      console.log(newOffset)
       return Math.min(newOffset, 0)
     })
   }
@@ -32,8 +29,12 @@ const SliderProducts = () => {
         <div className={styles.sliderUpBlock}>
           <h2 className={styles.sliderTitle}>Наши популярные продукты</h2>
           <div className={styles.sliderButtons}>
-            <img onClick={prevSlide} src={leftArrow} alt="leftArrow" className={styles.sliderLeftArrow} />
-            <img onClick={nextSlide} src={rightArrow} alt="rightArrow" className={styles.sliderRightArrow} />
+            <button onClick={prevSlide} className={styles.sliderLeftArrow}>
+              <img src={leftArrow} alt="leftArrow" />
+            </button>
+            <button onClick={nextSlide} className={styles.sliderRightArrow}>
+              <img src={rightArrow} alt="rightArrow" />
+            </button>
           </div>
         </div>
         <div className={styles.slides}>
@@ -54,7 +55,7 @@ const SliderProducts = () => {
                   <div className={styles.sale}>SALE</div>
                   <div className={styles.blockDown}>
                     <img src={gift} className={styles.giftImage} />
-                    <p className={styles.giftText}>Подарок</p>
+                    <span className={styles.giftText}>Подарок</span>
                   </div>
                 </div>
               </div>

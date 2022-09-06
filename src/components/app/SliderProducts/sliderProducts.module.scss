@@ -3,35 +3,47 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .sliderTitle {
   font: var(--h1);
   margin: 0;
 }
+
 .sliderLeftArrow {
   margin-right: 66px;
   cursor: pointer;
+  border: none;
+  background-color: inherit;
 }
+
 .sliderRightArrow {
   cursor: pointer;
+  border: none;
+  background-color: inherit;
 }
+
 .slides {
   display: flex;
   overflow: hidden;
   padding: 64px 0 96px 0;
   overflow-x: auto;
 }
+
 .slides::-webkit-scrollbar {
   width: 0;
 }
+
 .slide {
   max-width: 288px;
   margin-right: 30px;
   position: relative;
 }
+
 .slideTitle {
   font: var(--form-text);
   color: var(--brand-gray);
 }
+
 .slideBlockPrice {
   display: flex;
   margin-bottom: 16px;
@@ -41,12 +53,14 @@
   font: var(--main-slider-text);
   margin: 0 12px 0 0;
 }
+
 .slideItemPriceNumberStrike {
   font: var(--main-slider-small-text);
   margin: 0;
   color: var(--brand-light-gray3);
   text-decoration: line-through;
 }
+
 .inStock {
   display: flex;
   align-items: center;
@@ -54,15 +68,18 @@
   top: 17px;
   left: 10px;
 }
+
 .inStockImg {
   margin-right: 8px;
   background-color: var(--brand-white);
   padding: 7px 6px;
 }
+
 .inStockText {
   margin: 0;
   font: var(--catalog-card-not-stock);
 }
+
 .sale {
   position: absolute;
   top: 10px;
@@ -71,6 +88,7 @@
   padding: 8px 10px;
   font: var(--catalog-card-text-sale);
 }
+
 .blockDown {
   position: absolute;
   top: 48px;
@@ -79,17 +97,21 @@
   background-color: var(--brand-white);
   align-items: center;
 }
+
 .giftImage {
   width: 12px;
   height: 12px;
   padding: 6px 10px 8px 8px;
 }
+
 .giftText {
   margin: 0;
   padding: 2px;
   font: var(--main-text-info);
 }
+
 @media screen and(max-width: 930px) {
+
   .sliderButtons {
     display: none;
   }
@@ -101,6 +123,7 @@
     font: var(--h1-mobile);
     margin: auto;
   }
+
   .slides {
     padding: 24px 0 36px 0;
   }
