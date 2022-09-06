@@ -1,0 +1,86 @@
+.blockFeedback {
+  background-color: var(--brand-light-blue);
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0 56px;
+  max-width: 748px;
+  margin: auto;
+}
+
+.title {
+  font: var(--h1);
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  font: var(--form-text);
+  max-width: 518px;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.fieldName, .fieldEmail {
+  width: 240px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background: var(--brand-light-gray4);
+  margin-right: 24px;
+}
+
+.formBtn {
+  width: 220px;
+  height: 50px;
+  background: var(--brand-blue);
+  color: var(--brand-white);
+  border: none;
+}
+
+@media screen and (max-width: 770px) {
+
+  .form {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fieldName, .fieldEmail, .formBtn {
+    width: 240px;
+    max-width: 100%;
+  }
+
+  .fieldEmail, .subtitle {
+    margin: 16px 0 24px;
+    padding: 0;
+  }
+
+  .feedback {
+    padding-top: 32px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+
+  .title {
+    font: var(--h1-mobile);
+  }
+
+  .subtitle {
+    font: var(--catalog-small-text);
+  }
+
+  .feedback {
+    margin: 0 16px;
+  }
+}
