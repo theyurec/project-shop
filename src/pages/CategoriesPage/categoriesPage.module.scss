@@ -1,0 +1,114 @@
+.navImage {
+  display: none;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 6px;
+  left: 50px;
+}
+.navigation {
+  position: absolute;
+}
+.navCategoriesPage {
+  position: relative;
+  font: var(--form-text);
+  display: flex;
+  height: 20px;
+}
+
+.navCategoriesPage:after {
+  content: 'Каталог';
+  position: absolute;
+  left: 85px;
+  opacity: 0.5;
+}
+.navCategoriesPage:before {
+  content: '';
+  position: absolute;
+  width: 1.5px;
+  height: 20px;
+  left: 73px;
+  top: 3px;
+  background-color: grey;
+  transform: rotate(15deg);
+}
+
+.WrapperCategoriesPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blockCategoriesPage {
+  margin: 20px 0 100px;
+}
+.title {
+  margin: 40px 0 14px;
+  text-align: center;
+  font: var(--h1);
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+}
+.categoryImage {
+  margin: 50px 0 16px;
+  max-width: 100%;
+}
+.categoryName {
+  text-align: center;
+  font: var(--form-text);
+}
+.categoriesPageLink {
+  margin: auto;
+}
+.categoriesPageBtn {
+  margin: 50px auto 0;
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+  padding: 12px 57px;
+  font: var(--buttons-text);
+  border: none;
+}
+@media screen and(max-width: 1152px) {
+  .categories {
+    justify-content: center;
+  }
+  .category {
+    margin: 0 2% 24px 2%;
+  }
+}
+@media screen and(max-width: 955px) {
+  .blockCategoriesPage {
+    margin: 24px 0 40px;
+  }
+  .category {
+    max-width: 46%;
+  }
+  .categoryImage {
+    margin: 0 0 12px;
+  }
+  .navImage {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .title {
+    font: var(--h1-mobile);
+    margin: 12px 0 24px;
+  }
+  .categoriesPageBtn {
+    margin: 8px auto 0;
+    width: 100%;
+  }
+  .categoriesPageLink {
+    margin: 0 10px;
+  }
+}
+

@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage'
 import WholesalePage from './pages/WholesalePage'
 import DeliveryPay from './pages/DeliveryPay'
 import MakingAnOrder from './pages/MakingAnOrder'
+import CatalogPage from './pages/CatalogPage'
 
 // Роутинг компонентов
 function App() {
@@ -32,7 +33,7 @@ function App() {
           <CategoriesPage />
         </Route>
         <Route exact path="/categories/:id">
-          <CategoriesPage />
+          <CatalogPage />
         </Route>
         {/*Продукт*/}
         <Route exact path="/products/:id">
@@ -45,6 +46,10 @@ function App() {
         {/*Оформление заказа*/}
         <Route exact path="/payments">
           <MakingAnOrder />
+        </Route>
+        {/*Каталог*/}
+        <Route exact path="/catalog">
+          <CatalogPage />
         </Route>
       </Switch>
     </Layout>

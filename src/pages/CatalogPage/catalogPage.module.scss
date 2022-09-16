@@ -1,0 +1,43 @@
+.wrapperCatalogPage {
+
+}
+.navImage {
+  display: none;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 6px;
+  left: 50px;
+}
+.navigation {
+  position: absolute;
+}
+.navCatalog {
+  position: relative;
+  font: var(--form-text);
+  display: flex;
+  height: 20px;
+}
+
+.navCatalog:after {
+  content: 'Каталог';
+  position: absolute;
+  left: 85px;
+  opacity: 0.5;
+}
+.navCatalog:before {
+  content: '';
+  position: absolute;
+  width: 1.5px;
+  height: 20px;
+  left: 73px;
+  top: 3px;
+  background-color: grey;
+  transform: rotate(15deg);
+}
+.navCatalog {
+  margin-top: 20px;
+}
+.title {
+  margin: 40px 0 39px;
+}
